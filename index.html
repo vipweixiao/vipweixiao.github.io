@@ -166,7 +166,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>我们经常在安装和部署 SSL 证书的时候，需要一同安装中间证书。中间证书到底是什么？为什么必须要安装？为什么有时候，没有中间证书，chrome能正常访问 HTTPS，fireFox就提示错误 ？如下为FireFox的报错信息：<br><img src="20180301_1_https中间证书/image20180301_1.png" alt="FireFox提示缺少中间证书报错"></p>
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>我们经常在安装和部署 SSL 证书的时候，需要一同安装中间证书。中间证书到底是什么？为什么必须要安装？为什么有时候，没有中间证书，chrome能正常访问 HTTPS，fireFox就提示错误 ？如下为FireFox的报错信息：<br><img src="/2018/03/01/20180301_1_中间证书/image20180301_1.png" alt="FireFox提示缺少中间证书报错"></p>
 <h3 id="中间证书是什么"><a href="#中间证书是什么" class="headerlink" title="中间证书是什么"></a>中间证书是什么</h3><p>中间证书，其实也叫中间 CA （中间证书颁发机构， Intermediate certificate authority, Intermedia CA ），对应的是根证书颁发机构（ Root certificate authority ， Root CA ）。根证书是内置在操作系统或浏览器中。</p>
 <p>由于证书一级一级的信任原则，最上面是根证书，但基本不直接使用根证书签名文件。而是一级一级的信任，根证书发布中间证书，中间证书可以再发，然后用中间证书签署。这样我们一般使用的证书都是中间证书机构签发的，最上级的中间证书是根证书签发。</p>
 <p>例如：一个服务器证书 domain.com，是由Intermedia CA签发，而Intermedia CA的颁发者Root CA在WEB浏览器可信CA列表中，则证书的信任链如下：</p>
@@ -1337,11 +1337,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">树莓派</a>
+                <a href="javascript:void(0)" class="js-tag color5">代码比对</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">代码比对</a>
+                <a href="javascript:void(0)" class="js-tag color4">树莓派</a>
               </li>
             
             <div class="clearfix"></div>
